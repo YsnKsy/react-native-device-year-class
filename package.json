@@ -1,0 +1,51 @@
+{
+	"name": "react-native-device-year-class",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"react": "*",
+		"react-native": "*"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"rnpm": {
+		"android": {
+			"buildPatch": "    compile 'com.facebook.device.yearclass:yearclass:2.0.0'\n",
+			"packageImportPath": "import com.reactnativedeviceyearclass.RNDeviceYearClassPackage;",
+			"packageInstance": "new RNDeviceYearClassPackage()",
+			"sourceDir": "./android"
+		},
+		"commands": {
+			"postlink": "node node_modules/react-native-device-year-class/scripts/rnpm-postlink"
+		}
+	},
+	"author": "Yassine Kassy <y.kassy@me.com> (https://www.linkedin.com/in/yassinekassy)",
+	"license": "MIT",
+	"keywords": [
+		"react",
+		"react-native",
+		"android",
+		"device",
+		"year",
+		"class"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/YsnKsy/react-native-device-year-class.git"
+	},
+	"bugs": {
+		"url": "https://github.com/YsnKsy/react-native-device-year-class/issues"
+	},
+	"homepage": "https://github.com/YsnKsy/react-native-device-year-class"
+}
