@@ -1,6 +1,6 @@
 {
 	"name": "react-native-device-year-class",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"rnpm": {
 		"android": {
 			"buildPatch": "    compile 'com.facebook.device.yearclass:yearclass:2.0.0'\n",
