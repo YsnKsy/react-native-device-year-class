@@ -1,6 +1,20 @@
 {
 	"name": "react-native-device-year-class",
 	"version": "0.0.3",
+	"main": "index",
+	"peerDependencies": {
+		"react": "*",
+		"react-native": "*"
+	},
+	"devDependencies": {
+		"babel-jest": "*",
+		"babel-preset-react-native": "*",
+		"jest": "*",
+		"react-test-renderer": "*"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
 	"rnpm": {
 		"android": {
 			"buildPatch": "    compile 'com.facebook.device.yearclass:yearclass:2.0.0'\n",
